@@ -5,7 +5,7 @@ from .bodega import Bodega    # Importación relativa del modelo Bodega
 class Inventario(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     bodega = models.ForeignKey(Bodega, on_delete=models.CASCADE)
-    stock = models.IntegerField()
+    stock = models.PositiveIntegerField()  # Solo valores positivos
 
     class Meta:
         unique_together = ['product', 'bodega']
