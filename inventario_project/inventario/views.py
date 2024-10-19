@@ -1,21 +1,22 @@
-from django.shortcuts import render
-
 from rest_framework import viewsets
-from .models import Product, Warehouse, Inventory, Sale
+from .models.product import Product
+from .models.bodega import Bodega
+from .models.inventario import Inventario
+from .models.venta import Venta
 from .serializers import ProductSerializer, WarehouseSerializer, InventorySerializer, SaleSerializer
 
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-class WarehouseViewSet(viewsets.ModelViewSet):
-    queryset = Warehouse.objects.all()
+class BodegaViewSet(viewsets.ModelViewSet):
+    queryset = Bodega.objects.all()
     serializer_class = WarehouseSerializer
 
 class InventoryViewSet(viewsets.ModelViewSet):
-    queryset = Inventory.objects.all()
+    queryset = Inventario.objects.all()
     serializer_class = InventorySerializer
 
 class SaleViewSet(viewsets.ModelViewSet):
-    queryset = Sale.objects.all()
+    queryset = Venta.objects.all()
     serializer_class = SaleSerializer
