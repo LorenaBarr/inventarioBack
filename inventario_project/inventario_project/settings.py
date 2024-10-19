@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'inventario',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +60,7 @@ ROOT_URLCONF = 'inventario_project.urls'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'django_filters.rest_framework.DjangoFilterBackend'
     ),
     
 }

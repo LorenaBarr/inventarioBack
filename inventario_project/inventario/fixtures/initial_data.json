@@ -1,0 +1,54 @@
+[
+    {
+        "model": "inventario.product",
+        "pk": 1,
+        "fields": {
+            "nombre": "Laptop Dell XPS 13",
+            "descripcion": "Laptop de alto rendimiento con procesador Intel Core i7",
+            "precio": 1500.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 2,
+        "fields": {
+            "nombre": "Monitor Samsung UltraWide",
+            "descripcion": "Monitor 34 pulgadas con resolución 4K",
+            "precio": 800.00
+        }
+    },
+    {
+        "model": "inventario.bodega",
+        "pk": 1,
+        "fields": {
+            "nombre": "Bodega Central",
+            "ubicacion": "Avenida Principal 123, Ciudad"
+        }
+    },
+    {
+        "model": "inventario.bodega",
+        "pk": 2,
+        "fields": {
+            "nombre": "Bodega Norte",
+            "ubicacion": "Calle Secundaria 456, Ciudad Norte"
+        }
+    },
+    {
+        "model": "inventario.inventario",
+        "pk": 1,
+        "fields": {
+            "product": 1,
+            "bodega": 1,
+            "stock": 50
+        }
+    },
+    {
+        "model": "inventario.inventario",
+        "pk": 2,
+        "fields": {
+            "product": 2,
+            "bodega": 2,
+            "stock": 30
+        }
+    }
+]

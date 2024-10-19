@@ -14,8 +14,8 @@ router.register(r'ventas', VentaViewSet)
 
 # Definir las rutas URL
 urlpatterns = [
-    path('api/register/', UserRegisterView.as_view(), name='user-register'),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),  # Obtener token JWT
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),  # Refrescar token JWT
-    path('', include(router.urls)),  # Incluir las rutas generadas por el enrutador
+    path('register/', UserRegisterView.as_view(), name='user-register'),
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('', include(router.urls)),  
 ]
