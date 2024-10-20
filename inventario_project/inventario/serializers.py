@@ -23,6 +23,12 @@ class VentaSerializer(serializers.ModelSerializer):
         model = Venta
         fields = '__all__'
 
+    def create(self, validated_data):
+        # Asigna el usuario autenticado a la venta
+        validated_data['usuario'] = self.context['request'].user
+        return super(VentaSerializer, self).create(validated_data)
+
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
