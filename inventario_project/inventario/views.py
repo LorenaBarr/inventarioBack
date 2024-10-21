@@ -20,9 +20,9 @@ class ProductViewSet(viewsets.ModelViewSet):
 
 
 
-class BodegaViewSet(viewsets.ModelViewSet):  # Cambiado de WarehouseViewSet a BodegaViewSet
+class BodegaViewSet(viewsets.ModelViewSet):  
     queryset = Bodega.objects.all()
-    serializer_class = BodegaSerializer  # Cambiado de WarehouseSerializer a BodegaSerializer
+    serializer_class = BodegaSerializer  
 
 class InventarioViewSet(viewsets.ModelViewSet):
     queryset = Inventario.objects.all()
@@ -37,12 +37,6 @@ class VentaViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     filterset_fields = ['product__nombre', 'bodega__nombre']  # Filtros por producto y bodega
     ordering_fields = ['cantidad', 'fecha']  # Ordenar por cantidad de venta o fecha
-
-    def get_queryset(self):
-        # Solo mostrar las ventas hechas por el usuario autenticado
-        return Venta.objects.filter(usuario=self.request.user)
-    def get_queryset(self):
-        return Venta.objects.filter(usuario=self.request.user)
 
 class UserRegisterView(generics.CreateAPIView):
     queryset = User.objects.all()

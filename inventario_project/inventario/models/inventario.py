@@ -1,6 +1,6 @@
 from django.db import models
-from .product import Product  # Importación relativa del modelo Product
-from .bodega import Bodega    # Importación relativa del modelo Bodega
+from .product import Product  
+from .bodega import Bodega    
 
 class Inventario(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)

@@ -59,7 +59,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Permite tu frontend
+    'http://localhost:5173',  
 ]
 
 
@@ -108,11 +108,11 @@ WSGI_APPLICATION = 'inventario_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'inventory_db',  # Nombre  base de datos
-        'USER': 'postgres',       # usuario de PostgreSQL
-        'PASSWORD': '123456',  # Tu contraseña de PostgreSQL
-        'HOST': 'localhost',      # Usualmente localhost
-        'PORT': '5432',           # Puerto por defecto para PostgreSQL
+        'NAME': 'inventory_db',  
+        'USER': 'postgres',       
+        'PASSWORD': '123456',  
+        'HOST': 'localhost',      
+        'PORT': '5432',          
     }
 }
 
