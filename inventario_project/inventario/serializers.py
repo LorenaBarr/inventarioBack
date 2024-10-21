@@ -14,9 +14,12 @@ class BodegaSerializer(serializers.ModelSerializer):  # Cambiado a BodegaSeriali
         fields = '__all__'
 
 class InventarioSerializer(serializers.ModelSerializer):
+    product_nombre = serializers.CharField(source="product.nombre", read_only=True)
+    bodega_nombre = serializers.CharField(source="bodega.nombre", read_only=True)
+
     class Meta:
         model = Inventario
-        fields = '__all__'
+        fields = ['product', 'product_nombre', 'bodega', 'bodega_nombre', 'stock']
 
 class VentaSerializer(serializers.ModelSerializer):
     class Meta:

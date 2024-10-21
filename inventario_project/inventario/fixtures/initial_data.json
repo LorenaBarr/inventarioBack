@@ -18,6 +18,258 @@
         }
     },
     {
+        "model": "inventario.product",
+        "pk": 3,
+        "fields": {
+            "nombre": "Teclado Mecánico Corsair",
+            "descripcion": "Teclado mecánico RGB con interruptores Cherry MX",
+            "precio": 120.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 4,
+        "fields": {
+            "nombre": "Mouse Logitech MX Master 3",
+            "descripcion": "Ratón inalámbrico de alta precisión",
+            "precio": 100.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 5,
+        "fields": {
+            "nombre": "Disco Duro Externo WD",
+            "descripcion": "Disco duro externo 1TB con USB 3.0",
+            "precio": 75.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 6,
+        "fields": {
+            "nombre": "Cámara Web Logitech",
+            "descripcion": "Cámara web HD para videollamadas",
+            "precio": 50.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 7,
+        "fields": {
+            "nombre": "Impresora HP LaserJet",
+            "descripcion": "Impresora láser monocromática de alta velocidad",
+            "precio": 200.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 8,
+        "fields": {
+            "nombre": "Auriculares Bose QuietComfort",
+            "descripcion": "Auriculares inalámbricos con cancelación de ruido",
+            "precio": 300.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 9,
+        "fields": {
+            "nombre": "Tableta Gráfica Wacom",
+            "descripcion": "Tableta gráfica para diseño digital",
+            "precio": 250.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 10,
+        "fields": {
+            "nombre": "Smartwatch Apple",
+            "descripcion": "Reloj inteligente con monitor de salud",
+            "precio": 400.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 11,
+        "fields": {
+            "nombre": "Router TP-Link Archer",
+            "descripcion": "Router Wi-Fi de doble banda con alta velocidad",
+            "precio": 90.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 12,
+        "fields": {
+            "nombre": "Memoria USB SanDisk",
+            "descripcion": "Memoria USB de 128GB con interfaz USB 3.1",
+            "precio": 25.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 13,
+        "fields": {
+            "nombre": "Cargador Rápido Anker",
+            "descripcion": "Cargador rápido de 18W con USB-C",
+            "precio": 20.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 14,
+        "fields": {
+            "nombre": "Monitor Asus TUF Gaming",
+            "descripcion": "Monitor para juegos con frecuencia de actualización de 144Hz",
+            "precio": 350.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 15,
+        "fields": {
+            "nombre": "Silla de Oficina Ergonomica",
+            "descripcion": "Silla de oficina con soporte lumbar",
+            "precio": 180.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 16,
+        "fields": {
+            "nombre": "Lámpara de Escritorio LED",
+            "descripcion": "Lámpara con luz ajustable para escritorio",
+            "precio": 40.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 17,
+        "fields": {
+            "nombre": "Bocinas Bluetooth JBL",
+            "descripcion": "Bocinas portátiles con sonido envolvente",
+            "precio": 100.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 18,
+        "fields": {
+            "nombre": "Smartphone Samsung Galaxy",
+            "descripcion": "Teléfono inteligente con pantalla AMOLED",
+            "precio": 900.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 19,
+        "fields": {
+            "nombre": "Tablet Amazon Fire",
+            "descripcion": "Tableta de 10 pulgadas con Alexa integrada",
+            "precio": 150.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 20,
+        "fields": {
+            "nombre": "Cámara de Seguridad Arlo",
+            "descripcion": "Cámara de seguridad inalámbrica con visión nocturna",
+            "precio": 250.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 21,
+        "fields": {
+            "nombre": "Proyector Epson",
+            "descripcion": "Proyector HD con conectividad inalámbrica",
+            "precio": 600.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 22,
+        "fields": {
+            "nombre": "Cafetera Nespresso",
+            "descripcion": "Cafetera automática con cápsulas",
+            "precio": 120.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 23,
+        "fields": {
+            "nombre": "Refrigerador LG",
+            "descripcion": "Refrigerador de doble puerta con tecnología Inverter",
+            "precio": 1200.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 24,
+        "fields": {
+            "nombre": "Aspiradora Dyson V11",
+            "descripcion": "Aspiradora inalámbrica con succión potente",
+            "precio": 700.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 25,
+        "fields": {
+            "nombre": "Lavadora Samsung",
+            "descripcion": "Lavadora automática con carga frontal",
+            "precio": 900.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 26,
+        "fields": {
+            "nombre": "Secadora Whirlpool",
+            "descripcion": "Secadora eléctrica con varias configuraciones de calor",
+            "precio": 800.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 27,
+        "fields": {
+            "nombre": "Ventilador de Torre Honeywell",
+            "descripcion": "Ventilador de torre con control remoto",
+            "precio": 80.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 28,
+        "fields": {
+            "nombre": "Aire Acondicionado LG",
+            "descripcion": "Aire acondicionado portátil con control remoto",
+            "precio": 500.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 29,
+        "fields": {
+            "nombre": "Parlante Inteligente Google Home",
+            "descripcion": "Parlante inteligente con Google Assistant",
+            "precio": 100.00
+        }
+    },
+    {
+        "model": "inventario.product",
+        "pk": 30,
+        "fields": {
+            "nombre": "Cámara GoPro Hero 9",
+            "descripcion": "Cámara de acción resistente al agua con estabilización",
+            "precio": 400.00
+        }
+    },
+    {
         "model": "inventario.bodega",
         "pk": 1,
         "fields": {
@@ -49,6 +301,33 @@
             "product": 2,
             "bodega": 2,
             "stock": 30
+        }
+    },
+    {
+        "model": "inventario.inventario",
+        "pk": 3,
+        "fields": {
+            "product": 3,
+            "bodega": 1,
+            "stock": 60
+        }
+    },
+    {
+        "model": "inventario.inventario",
+        "pk": 4,
+        "fields": {
+            "product": 4,
+            "bodega": 2,
+            "stock": 40
+        }
+    },
+    {
+        "model": "inventario.inventario",
+        "pk": 5,
+        "fields": {
+            "product": 5,
+            "bodega": 1,
+            "stock": 80
         }
     }
 ]
